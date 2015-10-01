@@ -1,0 +1,17 @@
+table.sortable .headerSortUp:before,
+table.sortable .headerSortDown:before,
+table.sortable .header:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+table.sortable .header:before {
+    content: "\f0dc";
+}
+table.sortable .header.headerSortUp:before {
+    content: "\f0de";
+}
+table.sortable .header.headerSortDown:before {
+    content: "\f0dd";
+}
