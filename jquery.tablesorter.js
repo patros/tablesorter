@@ -849,6 +849,16 @@
                     parsers.push(parser);
                 };
             };
+            this.disableParser = function (parserID) {
+                for (var i = 0; i < parsers.length; i++) {
+                    if (parsers[i].id.toLowerCase() == parserID.toLowerCase()) {
+                        parsers[i].is = function () {
+                            return false;
+                        };
+                        break;
+                    }
+                }
+            };
             this.addWidget = function (widget) {
                 widgets.push(widget);
             };
