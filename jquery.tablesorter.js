@@ -859,6 +859,9 @@
                     }
                 }
             };
+            this.disableAllParsers = function () {
+                parsers = [];
+            };
             this.addWidget = function (widget) {
                 widgets.push(widget);
             };
